@@ -1,0 +1,8 @@
+@if (Game.HasSnakeEyes) // Alert.razor
+{
+    <div class="alert alert-danger">Oeps you did it again!</div>
+    <button @onclick="Game.Restart">Restart</button>
+}
+@code{
+    [Parameter] public Game Game { get; set; }
+}

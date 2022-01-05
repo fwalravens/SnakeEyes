@@ -52,6 +52,7 @@ namespace Domain
             _dice1 = new Dice();
             _dice2 = new Dice();
             _highscores = new List<int>();
+            
         }
 
         public void Play()
