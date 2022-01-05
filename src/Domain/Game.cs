@@ -34,7 +34,12 @@ namespace Domain
                 }
             }
         }
-        public IReadOnlyList<int> HighScores { get;}
+
+        public IReadOnlyList<int> HighScores
+        {
+            get => _highscores;
+
+        }
         public int Total { get; set; }
 
         public Game()
@@ -46,6 +51,7 @@ namespace Domain
         {
             _dice1 = new Dice();
             _dice2 = new Dice();
+            _highscores = new List<int>();
         }
 
         public void Play()
